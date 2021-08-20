@@ -494,7 +494,8 @@ fieldset {
 
 .footer {
     background: #C9C9C9;
-    height: 113px;    
+    height: 113px;
+    color: #fff;    
 }
 
 .footer__flex{
