@@ -491,3 +491,33 @@ fieldset {
         padding: 10px;
     }
 }
+
+.footer {
+    background: #C9C9C9;
+    height: 113px;    
+}
+
+.footer__flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.footer__text-right{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7;
+    align-items: flex-end;
+}
+
+@media (max-width: 800px) {
+    .footer__flex{
+        flex-direction: column;
+        line-height: 1.7;
+        align-items: start;
+    }
+    .footer__text-right{
+        align-items: start;
+    }
+}
