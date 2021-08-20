@@ -4,10 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Интенсив - верстаем промосайт iPhone13</title>
+    <title>iPhone13</title>
+
+    <link rel="shortcut icon" href="image/apple.svg" type="image/x-icon">
+
+    <link rel="preload" href="fonts/SFUIText-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/SFUIText-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/SFUIText-Regular.woff2" as="font" type="font/woff2" crossorigin>
+
     <link rel="stylesheet" href="style/normalize.css">
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/style.css">
+    <meta name="robots" content="noindex">
 </head>
 <body>
     <header class="header">
@@ -150,7 +158,7 @@
                 <div class="container">
                     <h2 class="order__title">Оформить предзаказ</h2>
 
-                    <form action="#" class="order__form form">
+                    <form action="#" class="order__form form" id="form-order">
 
                         <fieldset class="form__box">
                             <legend class="form__title-box">Персональные данные</legend>
@@ -210,24 +218,25 @@
                             <legend class="form__title-box">Аксессуары</legend>
 
                             <label for="" class="form__label checkbox">
-                                <input type="checkbox" name="accessories" id="case">Чехол
+                                <input class="checkbox__input" type="checkbox" name="accessories" id="case">Чехол
                             </label>
 
                             <label for="" class="form__label checkbox">
-                                <input type="checkbox" name="accessories" id="airPods">Наушники AirPods 3 
+                                <input class="checkbox__input" type="checkbox" name="accessories" id="airPods">Наушники AirPods 3 
                             </label>
 
                             <label for="" class="form__label checkbox">
-                                <input type="checkbox" name="accessories" id="glass">Защитное стекло
+                                <input class="checkbox__input" type="checkbox" name="accessories" id="glass">Защитное стекло
                             </label>
 
                             <label for="" class="form__label checkbox">
-                                <input type="checkbox" name="accessories" id="magSafe">Зарядное устройство MagSafe
+                                <input class="checkbox__input" type="checkbox" name="accessories" id="magSafe" disabled>Зарядное устройство MagSafe
                             </label>
                         </fieldset>
-
-                        <button type="submit" class="form__submit btn">Оформить</button>
+                        
                     </form>
+
+                    <button type="submit" class="form__submit btn" form="form-order">Оформить</button>
                 </div>
             </section>
         
