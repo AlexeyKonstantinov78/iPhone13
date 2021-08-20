@@ -376,7 +376,6 @@ fieldset {
     position: absolute;
     top: 0;
     left: 0;
-
     width: 40px;
     height: 40px;
     background: #FFFFFF;
@@ -400,7 +399,7 @@ fieldset {
     cursor: pointer; 
 }
 
-.checkbox__input:checked::after{
+.checkbox__input:checked:after {
     opacity: 1;
 }
 
